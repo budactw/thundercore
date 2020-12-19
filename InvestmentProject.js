@@ -67,7 +67,6 @@ class InvestmentProject {
    */
   withdraw(investorName, money) {
     const investor = this.getInvestor(investorName);
-
     investor.withdraw(money);
   }
 
@@ -81,10 +80,11 @@ class InvestmentProject {
 
   /**
    * @param investorName
-   * @returns float
+   * @returns number
    */
   claim(investorName) {
     const investor = this.getInvestor(investorName);
+
     return investor.claim();
   }
 

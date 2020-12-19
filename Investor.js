@@ -1,8 +1,22 @@
 class Investor {
+  /**
+   * @type {string}
+   */
   name = '';
+
+  /**
+   * @type {number}
+   */
   investedMoney = 0;
+
+  /**
+   * @type {array}
+   */
   settlementProfit = [];
 
+  /**
+   * @param investorName
+   */
   constructor(investorName) {
     this.name = investorName;
   }
@@ -39,6 +53,9 @@ class Investor {
     return total;
   }
 
+  /**
+   * @param money
+   */
   settleProfit(money) {
     this.settlementProfit.push(money);
   }
